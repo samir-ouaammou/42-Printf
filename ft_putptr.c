@@ -6,15 +6,15 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:41:24 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/07 11:27:08 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:18:29 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    ft_putptr(unsigned long nbr, int *len)
+void	ft_putptr(unsigned long nbr, int *len)
 {
-    if (nbr > 15)
-        ft_putptr(nbr / 16, len);
-    ft_puthex(nbr % 16, "0123456789abcdef", len);
+	if (nbr > 15)
+		ft_putptr(nbr / 16, len);
+	ft_puthex(nbr % 16, "0123456789abcdef", len);
 }

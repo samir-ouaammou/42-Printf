@@ -6,22 +6,22 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:26:34 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/07 11:54:45 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/07 12:18:32 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    ft_putstr(const char *str, int *len)
+void	ft_putstr(const char *str, int *len)
 {
-    if (!str)
-    {
-        ft_putstr("(null)", len);
-        return ;
-    }
-    while (*str)
-    {
-        ft_putchar(*str, len);
-        str++;
-    }
+	if (!str)
+	{
+		ft_putstr("(null)", len);
+		return ;
+	}
+	while (*str)
+	{
+		ft_putchar(*str, len);
+		str++;
+	}
 }
