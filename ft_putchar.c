@@ -6,7 +6,7 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:24:07 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/07 13:24:39 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:22:02 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 void	ft_putchar(int c, int *len)
 {
-	*len += write(1, &c, 1);
+	static int	temp;
+
+	if (*len == -1)
+		return ;
+	temp = write(1, &c, 1);
+	if (temp == -1)
+	{
+		*len = -1;
+		return ;
+	}
+	*len += temp;
 }

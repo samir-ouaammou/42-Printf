@@ -6,7 +6,7 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 09:57:51 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/07 13:23:02 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:20:32 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ int	ft_printf(const char *format, ...)
 			ft_all_printf(list, format[i++ + 1], &len);
 		else
 			ft_putchar(format[i], &len);
+		if (len == -1)
+			return (-1);
 		i++;
 	}
 	return (len);
