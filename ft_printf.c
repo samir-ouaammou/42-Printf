@@ -6,7 +6,7 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 09:57:51 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/07 12:42:13 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/07 13:23:02 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	ft_printf(const char *format, ...)
 		if ((format[i] == '%') && (format[i + 1] == '\0'))
 			return (len);
 		if (format[i] == '%')
-			ft_all_printf(list, format[i + 1], &len);
+			ft_all_printf(list, format[i++ + 1], &len);
 		else
 			ft_putchar(format[i], &len);
 		i++;
