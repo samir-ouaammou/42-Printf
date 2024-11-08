@@ -6,7 +6,7 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 09:57:51 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/08 11:10:54 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/08 12:40:08 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ static void	ft_all_printf(va_list list, char format, int *len)
 		ft_putstr("0x", len);
 		ft_putptr(va_arg(list, unsigned long), len);
 	}
+	else
+		ft_putchar(format, len);
 }
 
 int	ft_printf(const char *format, ...)
