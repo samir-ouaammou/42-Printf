@@ -6,7 +6,7 @@
 /*   By: souaammo <souaammo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:29:47 by souaammo          #+#    #+#             */
-/*   Updated: 2024/11/07 13:24:52 by souaammo         ###   ########.fr       */
+/*   Updated: 2024/11/08 11:09:00 by souaammo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putnbr(int nbr, int *len)
 {
+	if (*len == -1)
+		return (-1);
 	if (nbr == -2147483648)
 	{
 		ft_putstr("-2147483648", len);
