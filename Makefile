@@ -5,8 +5,6 @@ OBJS = ${FILE_C:%.c=%.o}
 
 NAME = libftprintf.a
 
-HEADRF = ft_putchar.h
-
 CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
