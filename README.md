@@ -53,8 +53,7 @@ To use the **ft_printf** function, include the header file `ft_printf.h` and com
 
 int main() {
     int num = 42;
-    ft_printf("Hello, World! %d
-", num);
+    ft_printf("Hello, World! %d\n", num);
     return 0;
 }
 ```
