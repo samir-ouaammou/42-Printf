@@ -23,7 +23,6 @@ The **ft_printf** project involves implementing a function that mimics the behav
 
 ---
 
-
 ## 📋 **Project Structure**
 
 The project is structured as follows:
