@@ -69,7 +69,7 @@ int main() {
 
 2. Navigate to the project directory:
    ```bash
-   cd 1337-Printf/Projects
+   cd 1337-Printf/Project
    ```
 
 3. Compile the source files using `make`:
