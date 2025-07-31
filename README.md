@@ -64,12 +64,12 @@ int main() {
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/samir-ouaammou/1337-Printf
+   git clone https://github.com/samir-ouaammou/Print
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd 1337-Printf/Project
+   cd Print/Project
    ```
 
 3. Compile the source files using `make`:
